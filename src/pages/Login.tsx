@@ -21,6 +21,7 @@ export default function Login() {
 
       // JWT を localStorage に保存（これがめっちゃ重要）
       localStorage.setItem("token", data.token);
+      localStorage.setItem("role", data.user.role);
 
       alert("Login successful!");
       console.log("Logged in:", data);
